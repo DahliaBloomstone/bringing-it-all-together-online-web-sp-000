@@ -8,6 +8,7 @@ def initialize(id = nil, name, breed)
 @name = name
 @breed = breed
 end
+
 def self.create_table
    sql =  <<-SQL
      CREATE TABLE IF NOT EXISTS students (
@@ -17,6 +18,7 @@ def self.create_table
        )
    SQL
    DB[:conn].execute(sql)
+ end 
 
 
 
