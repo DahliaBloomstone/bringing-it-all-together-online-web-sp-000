@@ -30,7 +30,7 @@ def self.create_table
      self.update
    else
      sql = <<-SQL
-       INSERT INTO students (name, grade)
+       INSERT INTO dogs (name, breed)
        VALUES (?, ?)
      SQL
 
